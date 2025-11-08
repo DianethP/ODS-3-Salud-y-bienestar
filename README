@@ -1,0 +1,63 @@
+# ODS-3-Salud-y-Bienestar - Clinica comunitaria
+
+## El sistema representa la gestión de pacientes en una clínica comunitaria.
+Su propósito es organizar, priorizar y registrar la atención médica de cada persona que acude al centro.
+
+## Como compilar
+- Lenguaje: C
+- Compilador: Visual Code & Programiz
+
+## casos de prueba
+-Registrar paciente
+Nombre: Ana López
+Edad: 32
+Motivo: control
+Prioridad: 0
+Paciente registrado con folio #1
+Nombre: Juan Pérez
+Edad: 70
+Motivo: fiebre alta
+Prioridad: 1
+Paciente registrado con folio #2
+- Atender paciente
+--- Paciente atendido ---
+Folio: 2 | Nombre: Juan Pérez | Motivo: fiebre alta | Prioridad: Alta (Prioritaria)
+- Mpstrar historial
+--- HISTORIAL DE PACIENTES ---
+Folio: 2 | Nombre: Juan Pérez | Edad: 70 | Motivo: fiebre alta | Prioridad: Alta | Espera aprox: X.X min
+- Mostrar pacientes en espera
+Folio: 1 | Nombre: Ana López | Edad: 32 | Motivo: control | Prioridad: Normal
+- Buscar paciente por folio
+Ingrese el folio del paciente a buscar: 2
+No se encontro ningun paciente con ese folio.
+- Generar reporte
+=========== REPORTE GENERAL (hoy) ===========
+Pacientes en espera: 1
+Pacientes atendidos : 1
+-- Prioridad --
+  Prioritarios atendidos: 1
+  Normales atendidos   : 0
+-- Tiempo de espera --
+  Espera promedio aprox: 0.0 minutos
+-- Causas mas frecuentes --
+  Tos        : 0
+  Fiebre     : 1
+  Curacion   : 0
+  Control    : 0
+  Otros      : 0
+-- Atenciones por franja horaria --
+  Madrugada  : 0
+  Manana     : 0
+  Tarde      : 1
+  Noche      : 0
+=============================================
+- DESHACER ultima accion
+Deshacer: se elimino el registro del folio 1 de la cola.
+- Salir
+Saliendo del sistema... 
+
+## División de tareas
+- Karen Portillo: Crear repositorio, funciones principales, s
+- Eduardo Enrique: Implementación de colas y funciones principales.
+- Abigail Salazar: Interfaz de usuario y generación de reportes.
+- Citlali Vazquez: Módulo de historial y pila de acciones.
